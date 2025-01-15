@@ -490,6 +490,6 @@ module modulfinal(
     adder sum(out_a, out_rez, sumen_plrez, out_sum);
     register reg_rez(clk_100MHz, reset_rez, out_sum, sumen_plrez, out_rez);
     
-    print_led print(out_rez, 1'b1, led_out);
+    print_led print(out_rez, setrdyp, led_out);
     
 endmodule
